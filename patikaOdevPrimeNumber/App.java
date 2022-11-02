@@ -6,20 +6,20 @@ public class App {
 
 	public static String isPrime(int number) {
 		boolean isPrime = false; 
-		int counter = 0; // counter tanımladık eger girilen sayı tam bolunen bir sayi ise counterı arttırarak devam edicez
+		int counter = 0; // counter tanimladik eger girilen sayi tam bolunen bir sayi ise counteri arttirarak devam edicez
 		for(int i = 2; i < number; i++) {
 			if(number == 2) {	
-				isPrime = true; // eger girilen sayi iki ise isPrime değişkenini true ya çektik.	
+				isPrime = true; // eger girilen sayi iki ise isPrime degiskenini true ya Ã§ektik.	
 				return (number + " is prime number.");
 			}
 			else if(number % i == 0) {
-				counter++; // eger girilen sayı 0'a tam bolunuyorsa asal degildir counterı arttırıyorz 0 a bolunen her sayıda
+				counter++; // eger girilen sayi 0'a tam bolunuyorsa asal degildir counteri arttiriyoruz.
 				isPrime = false;
 				return (number + " is not prime number.");
 			
 			}
 		}
-		if(counter == 0) { // counter da hic sayı yoksa tam boleni yoktur o bir asal sayıdır
+		if(counter == 0) { // counter da hic sayÃ½ yoksa tam boleni yoktur o bir asal sayÃ½dÃ½r
 			isPrime = true;
 			return (number + " is prime number.");
 		}
